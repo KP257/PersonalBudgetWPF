@@ -1,0 +1,35 @@
+﻿<Window x:Class="PersonalBudgetWPF.PurchaseVehicle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonalBudgetWPF"
+        mc:Ignorable="d"
+        Title="PurchaseVehicle" Height="592" Width="800" Background="LightBlue">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20" >
+
+        <StackPanel Margin="20">
+            <Label Content="Purchase Vehicle" Foreground="White" FontSize="30" HorizontalAlignment="Center"/>
+            <Separator Foreground="White"></Separator>
+            <Label Content="Model and Make" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtMakeAndModel" Background="#545d6a" Foreground="White" FontSize="18"/>
+            
+            <Label Content="Purchase Price" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtVehiclePrice" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Deposit Amount" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtVehicleDeposit" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Interest Rate" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtVehicleRate" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Insurance Premium per month" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtCarInsurance" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Months to repay over a period of five years" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+
+            <Button x:Name="BtnSaveCar" Content="Save" Background="#04c582" FontSize="18" Foreground="White" Height="58" Margin="278,25,268,0" Click="BtnSaveCar_Click" />
+
+        </StackPanel>
+    </Border>
+</Window>

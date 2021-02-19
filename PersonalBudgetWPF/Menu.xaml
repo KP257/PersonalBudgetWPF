@@ -1,0 +1,20 @@
+﻿<Window x:Class="PersonalBudgetWPF.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonalBudgetWPF"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800" Background="#04c582">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20" >
+        <StackPanel Margin="20">
+
+            <Label Content="Menu" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+
+            <Button x:Name="BtnRegister" Content="Register" Background="#04c582" FontSize="18" Foreground="White" Height="58" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="255,42,0,0" Width="208" Click="BtnRegister_Click" />
+            <Button x:Name="BtnLogin" Content="Login" Background="#04c582" FontSize="18" Foreground="White" Height="58" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="255,42,0,0" Width="208" Click="BtnLogin_Click"/>
+
+
+        </StackPanel>
+    </Border>
+</Window>

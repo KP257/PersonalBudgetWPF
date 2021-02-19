@@ -1,0 +1,42 @@
+﻿<Window x:Class="PersonalBudgetWPF.UserMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonalBudgetWPF"
+        mc:Ignorable="d"
+        Title="UserMenu" Height="637" Width="800" Background="#04c582">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20" >
+        <ScrollViewer>
+            <StackPanel Margin="20">
+
+           
+            <Label Content="Options" Foreground="White" FontSize="35" HorizontalAlignment="Center"/>
+            <Separator Foreground="White"></Separator>
+
+                <Label Name="lblIncome" Foreground="White"  FontSize="18" HorizontalAlignment="Center"  Margin="0,20,0,0" Visibility="Collapsed"/>
+
+                <Button x:Name="BtnPersonalExpenses" Content="Personal Expenses" Background="#04c582" FontSize="18" Foreground="White" Height="58"  Width="200" Margin="0,20,0,0" Click="BtnPersonalExpenses_Click" />
+                <Button x:Name="BtnPersonalExpensesFake" Content="Personal Expenses" Background="Gray" FontSize="18" Foreground="White" Height="58" Width="200" Margin="0,20,0,0" Visibility="Collapsed"/>
+                <Label Name="lblPmessage" Content="You have already entered your personal expenses" Foreground="Red" FontSize="15" HorizontalAlignment="Center"  Margin="0,20,0,0"  Visibility="Collapsed"/>
+
+                <Button x:Name="BtnHomeLoadPayments" Content="Purchase Property" Background="#04c582" FontSize="18" Foreground="White" Height="58"  Width="200" Margin="0,20,0,0" Click="BtnHomeLoanPayments_Click"/>
+                <Button x:Name="BtnHomeLoadPaymentsFake" Content="Purchase Property" Background="Gray" FontSize="18" Foreground="White" Height="58" Width="200" Margin="0,20,0,0" Visibility="Collapsed"/>
+                <Label Name="lblPPmessage" Content="You have already checked for a Home loan" Foreground="Red" FontSize="15" HorizontalAlignment="Center"  Margin="0,20,0,0" Visibility="Collapsed"/>
+                <Label Name="lblRentMessage" Content="You have selected rent and cannot select purchase property" Foreground="Red" FontSize="15" HorizontalAlignment="Center"  Margin="0,20,0,0" Visibility="Collapsed"/>
+
+                <Button x:Name="BtnPurchaseVehicle" Content="Purchase a Vehicle" Background="#04c582" FontSize="18" Foreground="White" Height="58" Width="200" Margin="0,20,0,0" Click="BtnPurchaseVehicle_Click"/>
+                <Button x:Name="BtnPurchaseVehicleFake" Content="Purchase Property" Background="Gray" FontSize="18" Foreground="White" Height="58" Width="200" Margin="0,20,0,0" Visibility="Collapsed"/>
+                <Label Name ="lblPVmessage" Content="You have already purchased a vehicle" Foreground="Red" FontSize="15" HorizontalAlignment="Center"  Margin="0,20,0,0" Visibility="Collapsed"/>
+
+                <Button x:Name="BtnShowTotal" Content="View your Expenses" Background="#04c582" FontSize="18" Foreground="White" Height="58"  Width="200" Margin="0,20,0,0" Click="BtnViewBudget_Click"/>
+                <Button x:Name="BtnShowTotalFAKE" Content="View your Expenses" Background="Gray" FontSize="18" Foreground="White" Height="58" Width="200" Margin="0,20,0,0" Visibility="Collapsed"/>
+                <Label Name ="lblSMessage" Content="You have to first enter your personal expenses" Foreground="Red" FontSize="15" HorizontalAlignment="Center"  Margin="0,20,0,0" Visibility="Collapsed"/>
+
+                <Button x:Name="BtnAdvancedFeature" Content="Advanced Feature" Background="#04c582" FontSize="18" Foreground="White" Height="58"  Width="200" Margin="0,60,0,0" Click="BtnAdvancedFeature_Click"/>
+
+            </StackPanel>
+        </ScrollViewer>
+
+    </Border>
+</Window>

@@ -1,0 +1,45 @@
+﻿<Window x:Class="PersonalBudgetWPF.UsersPersonalExpense"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonalBudgetWPF"
+        mc:Ignorable="d"
+        Title="Personal Expenses" Height="800" Width="800" Background="LightBlue">
+    
+    <Border Background="#2e3137" CornerRadius="20" Margin="20"  >
+        <StackPanel Margin="20">
+            <Label Content="Personal Budget" Foreground="White" FontSize="30" HorizontalAlignment="Center"/>
+            <Separator Foreground="White"></Separator>
+
+            <Label Content="Taxed Amount" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtTaxedAmount" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Groceries" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtGroceries" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Travel Costs" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtTravelCosts" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Phone Bills" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtPhoneBills" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Water and Lights" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtWaterAndLights" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Other" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox Name="txtOther" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Label Content="Would you like to include rent?" Foreground="white" HorizontalAlignment="Center" FontSize="18"/>
+            <Label Content="Note: If you select yes, you will not be able to purchase a property" Foreground="Red" HorizontalAlignment="Center" FontSize="18"/>
+            <CheckBox Name="checkedRentYes" Content="Yes" HorizontalAlignment="Center" FontSize="18" Foreground="white"  Checked="checkedRentYes_Checked" ></CheckBox>
+            <CheckBox Name="checkedRentNo" Content="No" HorizontalAlignment="Center" FontSize="18" Foreground="white" Margin="0,10,0,0" Checked="checkedRentNo_Checked"></CheckBox>
+
+            <Label Name="labelRent" Content="Rent Amount:" Foreground="white" HorizontalAlignment="Center" FontSize="18" Visibility="Collapsed"/>
+            <TextBox Name="txtRent" Background="#545d6a" Foreground="White" FontSize="18" Visibility="Collapsed"/>
+            <Button x:Name="BtnSave" Content="Save" Background="#04c582" FontSize="18" Foreground="White" Height="58" Margin="278,25,268,0" Click="BtnSave_Click" />
+
+        </StackPanel>
+    </Border>
+    
+</Window>

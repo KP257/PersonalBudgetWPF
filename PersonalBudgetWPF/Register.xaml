@@ -1,0 +1,31 @@
+﻿<Window x:Class="PersonalBudgetWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonalBudgetWPF"
+        mc:Ignorable="d"
+        Title="Register" Height="450" Width="800" Background="#04c582">
+
+    <Border Background="#2e3137" CornerRadius="20" Margin="20" >
+        <StackPanel Margin="20">
+            <Label Content="Register" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator Foreground="White"></Separator>
+
+
+            <Label Content="Username" Foreground="white" HorizontalAlignment="Center" FontSize="20"/>
+            <TextBox Name="txtUsername" Background="#545d6a" Foreground="White" FontSize="20"/>
+
+            <Label Content="Gross Income" Foreground="white" HorizontalAlignment="Center" FontSize="20"/>
+            <TextBox Name="txtGrossIncome" Background="#545d6a" Foreground="White" FontSize="20"/>
+
+            <Label Content="Password" Foreground="white" HorizontalAlignment="Center" FontSize="20"/>
+            <PasswordBox Name="txtPassword" Background="#545d6a" Foreground="White" FontSize="20"/>
+            <Button x:Name="btnRegister" Content="Register" Background="#04c582" FontSize="18" Foreground="White" Height="58" Margin="278,25,266,0" Click="BtnRegister_Click"/>
+ 
+        </StackPanel>
+
+
+    </Border>
+
+</Window>
